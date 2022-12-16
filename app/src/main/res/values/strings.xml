@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MasseCorporelle</string>
+    <string name="main_title">IMC calculator</string>
+    <string name="main_taille">Saisissez la taille</string>
+    <string name="main_poids">Saisissez le poids</string>
+    <string name="main_ed_poids">Poids</string>
+    <string name="main_ed_taille">Taille</string>
+    <string name="main_bt_calculer">Calculer</string>
+    <string name="main_bt_annuler">Annuler</string>
+    <string name="result_label_ecran">Ecran</string>
+    <string name="result_valeur_imc">Votre IMC est de :</string>
+    <string name="result_text_imc">Vous êtes</string>
+    <string name="result_text_sous_poids">en sous-poids</string>
+    <string name="result_text_imc_normal">normal</string>
+    <string name="result_text_imc_en_surpoids">en surpoids</string>
+    <string name="result_text_imc_obese">obèse</string>
+    <string name="result_text_imc_obesite_severe">en obésité sévère</string>
+</resources>

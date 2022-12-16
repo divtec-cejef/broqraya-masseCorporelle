@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/app_margin"
+            android:gravity="center"
+            android:text="@string/main_title" />
+
+        <ImageView
+            android:layout_width="@dimen/main_img_size"
+            android:layout_height="@dimen/main_img_size"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@drawable/weightlogo"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_label_size"
+            android:gravity="center"
+            android:text="@string/main_taille"
+            android:padding="@dimen/main_label_size"
+            android:layout_marginHorizontal="50dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_taille_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:hint="@string/main_ed_taille">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/main_taille_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:inputType="number"
+                android:maxLines="1"
+                app:suffixText="kg"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/main_label_size"
+            android:gravity="center"
+            android:text="@string/main_poids"
+            android:padding="@dimen/main_label_size"
+            android:layout_marginHorizontal="50dp"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_poids_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:hint="@string/main_ed_poids">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/main_poids_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:inputType="number"
+                android:maxLines="1"
+                app:suffixText="cm"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/main_bt_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/main_bt_calculer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:backgroundTint="@color/green"
+            android:orientation="horizontal"
+            android:text="@string/main_bt_calculer"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/main_bt_annuler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/main_bt_calculer"
+            android:backgroundTint="@color/red"
+            android:orientation="horizontal"
+            android:layout_marginEnd="12dp"
+            android:text="@string/main_bt_annuler"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</LinearLayout>
